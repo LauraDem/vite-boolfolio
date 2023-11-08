@@ -11,9 +11,9 @@ export default {
 </script>
 
 <template>
-  <h1>Hello World</h1>
-  <hr />
-  <ProjectList />
+  <div class="mt-5">
+    <ProjectList />
+  </div>
 </template>
 
 <style lang="scss"></style>
