@@ -35,8 +35,8 @@ export default {
             <router-link
               class="nav-link"
               aria-current="page"
-              :to="{ name: 'blog' }"
-              >Blog</router-link
+              :to="{ name: 'portfolio' }"
+              >Portfolio</router-link
             >
           </li>
         </ul>
