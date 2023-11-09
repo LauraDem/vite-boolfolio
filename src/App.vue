@@ -1,19 +1,24 @@
 <script>
-import ProjectList from "./components/projects/ProjectList.vue";
+import NavbarUi from "./components/projects/Ui/NavbarUi.vue";
 
 export default {
   data() {
     return {};
   },
 
-  components: { ProjectList },
+  components: { NavbarUi },
 };
 </script>
 
 <template>
+  <NavbarUi />
+  <router-view></router-view>
+
+  <!-- 
+
   <div class="mt-5">
     <ProjectList />
-  </div>
+  </div> -->
 </template>
 
 <style lang="scss"></style>
