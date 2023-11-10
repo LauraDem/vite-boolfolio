@@ -3,6 +3,12 @@ export default {
   props: {
     project: Object,
   },
+  // computed: {
+  //   abstract() {
+  //     let dots = this.project.content.length > 100 ? "..." : "";
+  //     return this.project.content.substr(0, 100) + dots;
+  //   },
+  // },
 };
 </script>
 
@@ -16,6 +22,13 @@ export default {
       </div>
       <div class="card-body">
         <h4>{{ project.name }}</h4>
+        <img
+          v-if="project.cover_image"
+          :src="project.cover_image"
+          class="img-fluid w-50 me-1 mb-1 float-start"
+          alt=""
+        />
+        <p>{{ project.content }}</p>
       </div>
       <div class="card-footer">
         <a href="#">
