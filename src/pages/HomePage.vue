@@ -8,8 +8,6 @@ export default {
 };
 </script>
 
-<template>
-  {{ title }}
-</template>
+<template></template>
 
 <style lang="scss" scoped></style>

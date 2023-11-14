@@ -1,19 +1,18 @@
 <script>
 import NavbarUi from "./components/projects/Ui/NavbarUi.vue";
-import ContactForm from "./components/projects/Ui/ContactForm.vue";
 
 export default {
   data() {
     return {};
   },
 
-  components: { NavbarUi, ContactForm },
+  components: { NavbarUi },
 };
 </script>
 
 <template>
   <NavbarUi />
-  <ContactForm />
+
   <router-view></router-view>
 
   <!-- 

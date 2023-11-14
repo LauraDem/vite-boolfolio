@@ -31,9 +31,16 @@ export default {
         <p>{{ project.content }}</p>
       </div>
       <div class="card-footer">
-        <a href="#">
-          <button class="btn btn-success">Vedi</button>
-        </a>
+        <router-link
+          :to="{
+            name: 'project-detail',
+            params: {
+              id: project.id,
+            },
+          }"
+          class="btn btn-success"
+          >Vedi</router-link
+        >
       </div>
     </div>
   </div>
