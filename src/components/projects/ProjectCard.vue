@@ -2,6 +2,7 @@
 export default {
   props: {
     project: Object,
+    isDetail: Boolean,
   },
   // computed: {
   //   abstract() {
@@ -25,12 +26,16 @@ export default {
         <img
           v-if="project.cover_image"
           :src="project.cover_image"
-          class="img-fluid w-50 me-1 mb-1 float-start"
-          alt=""
+          class="img-fluid mb-1"
+          :class="{
+            'w-50': isDetail,
+            'me-1': isDetail,
+            'float-start': isDetail,
+          }"
         />
         <p>{{ project.content }}</p>
       </div>
-      <div class="card-footer">
+      <div class="card-footer" v-if="!isDetail">
         <router-link
           :to="{
             name: 'project-detail',
